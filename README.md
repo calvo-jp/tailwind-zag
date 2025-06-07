@@ -1,11 +1,11 @@
-# tailwindcss-plugin-zag
+# tailwind-zag
 
 A [TailwindCSS](https://tailwindcss.com/) plugin to style [zag](https://zagjs.com/)-powered-components using their [data attributes](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_HTML_problems/Use_data_attributes).
 
 ## Installation
 
 ```bash
-npm install -D tailwindcss-plugin-zag
+npm install -D tailwind-zag
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ Add the plugin to your tailwind config
 ```ts
 // tailwind.config.ts
 import type {Config} from 'tailwindcss';
-import zag from 'tailwindcss-plugin-zag';
+import zag from 'tailwind-zag';
 
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -34,7 +34,7 @@ export default {
 If you are using tailwind v4, you can add the plugin to your `css` file like this:
 
 ```css
-@plugin 'tailwindcss-plugin-zag';
+@plugin 'tailwind-zag';
 ```
 
 Style your components
@@ -55,7 +55,7 @@ export function Component() {
 
 ```js
 // tailwind.config.js
-import zag from 'tailwindcss-plugin-zag';
+import zag from 'tailwind-zag';
 
 /** @type {import('tailwindcss').Config} */
 export default {
